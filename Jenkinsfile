@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('ls hello.py') {
       steps {
-        sh 'ls ./hello.py'
-        timestamps()
+        sh '''date
+ls ./hello.py'''
       }
     }
     stage('Run hello.py') {
